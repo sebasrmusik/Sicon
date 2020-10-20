@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/form crear factura-despacho.css">
   </head>
   <body>
-    <form action="" onsubmit="return validacion_crear_despachos()">
+    <form action="">
       <div class="contenedor">
         <div class="form">
           <h2>Crear despacho</h2>
@@ -31,12 +31,12 @@
                   <input type="date" name="fechaCrearFactura" id="fechaCrearFactura" class="tamanioDos">
                 </div>
                 <div>
-                  <label for="proveedorCrearFactura">Empleado</label>
-                  <select name="proveedorCrearFactura" id="proveedorCrearFactura" class="tamanioUno">
+                  <label for="empleadoCrearFactura">Empleado</label>
+                  <select name="empleadoCrearFactura" id="empleadoCrearFactura" class="tamanioUno">
                     <option value="">Seleccione un empleado</option>
-                    <option value="">Empleado 1</option>
-                    <option value="">Empleado 2</option>
-                    <option value="">Empleado 3</option>
+                    <option value="Empleado 1">Empleado 1</option>
+                    <option value="Empleado 2">Empleado 2</option>
+                    <option value="Empleado 3">Empleado 3</option>
                   </select>
                 </div>
               </div>
@@ -47,7 +47,7 @@
                 <div>
                   <label for="fromArticulo">Articulo</label>
                   <select name="fromArticulo" id="fromArticulo" class="tamanioUno">
-                    <option value="Seleccione">Seleccione</option>
+                    <option value="">Seleccione articulo</option>
                     <option value="Cemento">Cemento</option>
                     <option value="Ladrillo">Ladrillo</option>
                     <option value="Varilla">Varilla</option>
@@ -59,7 +59,7 @@
                 <div>
                   <label for="fromMetrica">Unidad metrica</label>
                   <select name="fromMetrica" id="fromMetrica" class="tamanioUno">
-                    <option value="Seleccione Unida metrica">Seleccione Unida metrica</option>
+                    <option value="">Seleccione Unida metrica</option>
                     <option value="Bulto">Bulto</option>
                     <option value="Unidad">Unidad</option>
                     <option value="3/4">3/4</option>
@@ -75,7 +75,7 @@
                 <!-- BOTON AGREGAR PRODUCTO -->
                 <div>
                   <label for=""></label>
-                  <input type="button" value="Agregar producto" class="boton" onclick="agregarProducto()"></div>
+                  <input type="button" value="Agregar producto" class="boton" onclick="validar_campos()"></div>
               </div>
             </fieldset>
           </div >
@@ -111,7 +111,6 @@
           </div>
         </div>
       </div>
-      <script src="js/agregar despacho.js" charset="UTF-8"></script>
     </form>
     <script src="js/form crear despacho.js"></script>
   </body>
