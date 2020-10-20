@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion de usuario pedido interno</title>
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <link rel="stylesheet" href="css/gestion inventario externo-interno.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <!-- HEADER -->
+      <div class="header">
+        <header>
+          <a href="#">
+            <figure>
+              <img src="img/general/sicon.png" alt="logo sicon" id="logoCabecera" />
+            </figure>
+          </a>
+          <div id="tituloNav">
+            <div id="contenedorH1Usuario">
+              <h1>Inventario Eficiente</h1>
+              <div id="iniciarSesion">
+                <div id="contenedorUsuario">
+                  <figure id="figAvatar">
+                    <img id="avatar" src="img/general/avatar.png" alt="avatar" />
+                  </figure>
+                  <p>Administrador</p>
+                  <a href="../../index.html">
+                  <input type="button" value="Cerrar sesion"></a>
+                </div>
+              </div>
+            </div>
+            <nav id="nav1">
+              <ul>
+                <li><a href="../modulo inventario/inventario.html">Inventario</a></li>
+                <li><a href="../modulo gestion de usuario/gestion de usuarios.html">Gestion de usuario</a></li>
+                <li><a href="../modulo gestion de inventario/gestion inventario proveedor.html">Gestion de Inventario</a></li>
+                <!-- <li><a href="#">Informes</a></li> -->
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <input type="text" name="" id="linea">
+      </div>
+      <!-- NAV 2 -->
+      <div id="contenedorNav2">
+        <nav id="nav2">
+          <ul>
+            <li><a href="gestion inventario proveedor.html">Gestion de proveedores</a></li>
+            <li><a href="gestion inventario empleado.html">Gestion de empleados</a></li>
+            <li><a href="gestion inventario pedido externo.html">Pedido externo</a></li>
+            <li><a href="gestion inventario pedido interno.html">Pedido interno</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- BOTONES DE ACCION -->
+      <div class="botones">
+        <form action="" id="formBotones">
+          <fieldset id="botonesInternos">
+            <div>
+              <a href="form crear despacho.html"><img class="boton" src="img/pedido interno/Ingresar despacho.jpg" alt="Nuevo despacho"></a>
+              <a href="form eliminar despacho.html"><img class="boton" src="img/pedido interno/Eliminar despacho.jpg" alt="Eliminar despacho"></a>
+            </div>
+            <div id="contenedorLinea">
+              <input type="text" name="" id="lineaBotones">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!-- GRILLA -->
+      <div class="grilla">
+        <form>
+          <fieldset>
+            <input class="buscar" type="search" name="Buscar usuario" id="" placeholder="Buscar usuario" autocomplete="transaction-currency"/>
+            <div id="contenedorTabla">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="tamanioTres"><input type="radio" name="grillaPedidoInterno" id="" disabled></th> 
+                    <th class="tamanioTres">Id</th>
+                    <th class="tamanioDos">Fecha del despacho</th>
+                    <th class="tamanioUno">Nombre del empleado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>001</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>002</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>003</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>004</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>005</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>006</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>007</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                  <tr class="cebra">
+                    <td class="stickyIdEmpleado"><input type="radio" name="grillaPedidoInterno" id=""></td> 
+                    <td>008</td>
+                    <td>30/Sep/2020</td>
+                    <td>Roberto Gómez Bolaños</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="form exportar despachos.html">
+              <img class="exportar" src="img/pedido interno/Exportar despachos.jpg" alt="Exportar despachos" width="150px">
+            </a>
+          </fieldset>
+        </form>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer">
+        <footer>
+          <div id="seccionFooter">
+            <nav class="navfooter" id="navFooter1">
+              <ul>
+                <a href="#"><li>Aviso legal</li></a>
+                <a href="#"><li>Politicas de privacidad</li></a>
+                <a href="#"><li>Politicas de calidad</li></a>
+                <a href="#"><li>Politicas de cookies</li></a>
+              </ul>
+            </nav>
+            <div class="imgFooter">
+              <figure>
+                <div id="seccionImg">
+                  <img id="logoFooter" src="img/general/sicon.png" alt="Logo Sicon" />
+                  <img id="logoRedes" src="img/general/redes.png" alt="Logo Redes.png"  />
+                </div>  
+              </figure>
+            </div>
+            <nav class="navfooter" id="navFooter2">
+              <ul>
+                <a href="#"><li>Sicon</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>PQR</li></a>
+                <a href="#"><li>Contáctenos</li></a>
+              </ul>
+            </nav>
+          </div>
+          <p>
+          Sicon inc International | Cra 9 No 7 a 16(Fusagasuga) COLOMBIA |
+          servicioalcliente@sicon.com | +57 3115701088
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

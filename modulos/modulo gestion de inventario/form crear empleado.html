@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Empleado</title>
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <link rel="stylesheet" href="css/formularios proveedor-empleado.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="" class="form" onsubmit="return validacion_crear_empleado()">
+        <h2>Crear Empleado</h2>  
+        <h3>Datos del Empleado</h3> 
+        <div class="formulario1">
+
+          <div id="seccionUno">
+            <div class="elementosInternos">
+              <label for="NoIdentificacion">Identificacion *</label>
+              <input type="text" name="NoIdentificacion" id="NoIdentificacion" class="tamanioDos">
+            </div>
+            <div class="elementosInternos">
+              <label for="RazonSocial">Nombre del empleado *</label>
+              <input type="text" name="RazonSocial" id="RazonSocial" class="tamanioUno">
+            </div>
+            <div class="elementosInternos">
+              <label for="NombreContacto">Apellidos del empleado *</label>
+              <input type="text" name="NombreContacto" id="NombreContacto" class="tamanioUno">
+            </div>
+            <div class="elementosInternos">
+              <label for="Telefono1">Telefono 1 *</label>
+              <input type="text" name="Telefono1" id="Telefono1" class="tamanioDos">
+            </div>
+            <div class="elementosInternos">
+              <label for="Telefono2">Telefono 2</label>
+              <input type="text" name="Telefono2" id="Telefono2" class="tamanioDos">
+            </div>
+          </div>
+          
+          <div id="seccionDos">
+            <div class="elementosInternos">
+              <label for="Direccion">Direccion *</label>
+              <input type="text" name="Direccion" id="Direccion" class="tamanioUno">
+            </div>
+            <div class="elementosInternos">
+              <label for="Departamento">Departamento *</label>
+              <select name="Departamento" id="Departamento" class="tamanioDos">
+                <option value="">Selecione departamento</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Antioquia">Antioquia</option>
+                <option value="Santander">Santander</option>
+              </select>
+            </div>
+            <div class="elementosInternos">
+              <label for="CiudadMunicipio">Ciudad/Municipio *</label>
+              <select name="CiudadMunicipio" id="CiudadMunicipio" class="tamanioDos">
+                <option value="">Selecione Ciudad/Municipio</option>
+                <option value="Fusagasuga">Fusagasuga</option>
+                <option value="Silvania">Silvania</option>
+                <option value="Pasca">Pasca</option>
+              </select>
+            </div>
+            <div class="elementosInternos">
+              <label for="eMail">e-Mail</label>
+              <input type="text" name="eMail" id="eMail"class="tamanioUno" >
+            </div>
+          </div>
+
+        </div>
+        <div class="botones">
+          <input type="submit" value="Crear Empleado" class="boton">
+          <a href="gestion inventario empleado.html"><input type="button" value="Cancelar" class="boton"></a>
+        </div>
+      </form>
+    </div> 
+    <script src="js/form crear empleado.js"></script>
+  </body>
+</html>

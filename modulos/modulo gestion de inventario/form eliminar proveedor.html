@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <title>Eliminar proveedor</title>
+    <link rel="stylesheet" href="css/form eliminar factura-despacho.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="" class="form" onsubmit="return validacion_eliminar_proveedor()">
+        <h2>Eliminar Proveedor</h2>
+        <div class="formulario1">
+          <p id="pregunta">Desea eliminar el proveedor seleccionado?</p>
+          <p class="p">Razon social</p>
+          <p>Distribuidora el aguila</p>
+          <p class="p">Nit:</p>
+          <p>20204578-2</p>
+          <div class="inputs">
+            <div>
+              <input type="checkbox" name="" id="eliminar">
+              <label for="eliminar"> Eliminar </label>
+            </div>
+          </div>
+        </div>
+        <div class="botones">
+          <input type="submit" value="Eliminar" class="boton" />
+          <a href="gestion inventario proveedor.html"><input type="button" value="Cancelar" class="boton"></a>
+        </div>
+      </form>
+    </div>
+    <script src="js/form eliminar proveedor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url(../img/general/Fondo1.png);
+}
+.contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 500px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 400px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h3 {
+  font-size: 18px;
+  color: #fff;
+}
+/* FORMULARIO */
+.formulario {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+.formulario div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.formulario div input {
+  text-align: center;
+}
+/* BOTONES */
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+}
+.boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  border-bottom: 5px solid #b3b3b3;
+}

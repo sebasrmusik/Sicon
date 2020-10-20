@@ -1,0 +1,1051 @@
+/* ESTILO GENERAL */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: #ffffff;
+}
+/* CONTENEDOR */
+.contenedor {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* HEADER */
+header {
+  display: flex;
+  align-items: top;
+}
+#logoCabecera {
+  width: 400px;
+}
+#tituloNav {
+  width: 100%;
+  margin-left: 10px;
+  justify-content: top;
+}
+#contenedorH1Usuario {
+  display: flex;
+  align-items: flex-end;
+}
+h1 {
+  align-items: baseline;
+  font-size: 40px;
+  color: #dddddd;
+}
+/* USUARIO */
+#iniciarSesion {
+  margin-left: 65px;
+  margin-top: -30px;
+  display: flex;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.figavatar {
+  text-align: center;
+}
+#avatar {
+  text-align: center;
+  width: 30px;
+}
+/* NAV */
+#nav1 ul {
+  display: flex;
+  list-style: none;
+}
+#nav1 li {
+  background: #dddddd;
+  border: 1px solid #666;
+  flex: auto;
+  text-align: center;
+  padding: 10px;
+}
+#nav1 a {
+  font-weight: bold;
+  color: #073763;
+  text-decoration: none;
+  display: block;
+}
+#nav1 li:hover,
+#nav1 a:hover {
+  color: #eee;
+  background: #95bcf2;
+  transition: 400ms;
+}
+#linea {
+  height: 7px;
+  background: #95bcf2;
+  position: absolute;
+  width: 870px;
+  left: 130px;
+  top: 96px;
+  border: none;
+  border-bottom: solid #666666 7px;
+}
+/* BOTONES */
+#formBotones {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+}
+#botonesInternos {
+  display: block;
+  text-align: end;
+}
+#botonesInternos a IMG {
+  margin-left: 10px;
+  height: 50px;
+  width: 150px;
+}
+#lineaBotones {
+  width: 809px;
+  height: 10px;
+  border: none;
+  background: #666666;
+}
+/* GRILLA */
+fieldset {
+  margin-top: 20px;
+  border: 0;
+}
+.buscar {
+  float: right;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 100%;
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+#contenedorTabla {
+  overflow: scroll;
+  width: 1000px;
+  height: 216px;
+}
+table {
+  table-layout: fixed;
+  text-align: center;
+  clear: both;
+  width: 100%;
+  border-collapse: collapse;
+}
+.tamanioUno {
+  width: 200px;
+}
+.tamanioDos {
+  width: 100px;
+}
+.tamanioTres {
+  width: 25px;
+}
+th {
+  background: #cccccc;
+  color: #202020;
+  font-weight: bold;
+  padding: 10px;
+}
+td {
+  padding: 6px;
+}
+/* AZUL */
+th {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.cebra {
+  background: #fff;
+  color: #202020;
+}
+.cebra:nth-child(even) {
+  background: #073763;
+  color: #ffffff;
+}
+/* STICKY 1 */
+.stickyId {
+  position: sticky;
+  left: 0px;
+  top: 37px;
+}
+body tr .stickyId {
+  background: #fff;
+  color: #202020;
+}
+tbody tr:nth-child(even) .stickyId {
+  background: #073763;
+  color: #ffffff;
+}
+
+.exportar {
+  float: right;
+  margin: 20px 0px;
+}
+/* FOOTER */
+#seccionFooter {
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  background: #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#seccionFooter nav ul a {
+  list-style: none;
+  text-decoration: none;
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+}
+#seccionImg {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navfooter {
+  width: 200px;
+}
+#logoFooter {
+  height: 70px;
+}
+#logoRedes {
+  width: 80px;
+}
+footer p {
+  background: #0b2161;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  border-top: #666666 10px solid;
+  clear: both;
+}
+/* estilos del Modal */
+
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Estilos del formulario roles y privilegios*/
+
+#modal_roles_y_privilegios .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: #ffffff;
+  width: 1000px;
+  height: 580px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal_roles_y_privilegios .form {
+  width: 900px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_roles_y_privilegios h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* BOTONES DE ACCION*/
+#modal_roles_y_privilegios .botonesAccion {
+  background: #cccccc;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#modal_roles_y_privilegios .botonAccion {
+  width: 130px;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid black;
+  /* border-radius: 10px; */
+}
+#modal_roles_y_privilegios #tres {
+  margin-bottom: 5px;
+  border-bottom: #666666 10px solid;
+}
+/* GRILLA */
+#modal_roles_y_privilegios #contenedorTabla {
+  overflow: scroll;
+  width: 900px;
+  height: 216px;
+}
+#modal_roles_y_privilegios table {
+  table-layout: fixed;
+  text-align: center;
+  clear: both;
+  width: 100%;
+  border-collapse: collapse;
+}
+#modal_roles_y_privilegios .tamanioUno {
+  width: 20px;
+}
+#modal_roles_y_privilegios .tamanioDos {
+  width: 80px;
+}
+#modal_roles_y_privilegios .tamanioTres {
+  width: 15px;
+}
+#modal_roles_y_privilegios th {
+  background: #cccccc;
+  color: #202020;
+  font-weight: bold;
+  padding: 10px;
+}
+#modal_roles_y_privilegios td {
+  padding: 6px;
+}
+/* AZUL */
+#modal_roles_y_privilegios th {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#modal_roles_y_privilegios .cebra {
+  background: #fff;
+  color: #202020;
+}
+#modal_roles_y_privilegios .cebra:nth-child(even) {
+  background: #073763;
+  color: #ffffff;
+}
+/* STICKY 1 */
+#modal_roles_y_privilegios .stickyId {
+  position: sticky;
+  left: 0px;
+  top: 54px;
+}
+#modal_roles_y_privilegios body tr .stickyId {
+  background: #fff;
+  color: #202020;
+}
+#modal_roles_y_privilegios tbody tr:nth-child(even) .stickyId {
+  background: #073763;
+  color: #ffffff;
+}
+
+#modal_roles_y_privilegios .exportar {
+  float: right;
+  margin: 20px 0px;
+}
+
+/* 
+#modal_roles_y_privilegios table {
+  text-align: center;
+  border-collapse: collapse;
+}
+#modal_roles_y_privilegios thead {
+  background: #cccccc;
+  color: #333333;
+}
+#modal_roles_y_privilegios th {
+  padding: 10px;
+}
+#modal_roles_y_privilegios td {
+  padding: 6px;
+}
+#modal_roles_y_privilegios .azul {
+  background: #073763;
+  color: #ffffff;
+}
+#modal_roles_y_privilegios .grilla table .azul td input {
+  background: black;
+}
+#modal_roles_y_privilegios #nombreRol {
+  width: 150px;
+} */
+/* BOTONES */
+#modal_roles_y_privilegios .roles_y_privilegios_botones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+#modal_roles_y_privilegios .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_roles_y_privilegios .boton:active {
+  transform: scale(0.9);
+}
+
+/* estilos del formulario crear rol */
+
+#modal_crear_rol .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: #000000;
+  width: 500px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal_crear_rol .form {
+  width: 400px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_crear_rol h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#modal_crear_rol h3 {
+  color: #ffffff;
+}
+/* DERECHA */
+#modal_crear_rol .derecha {
+  text-align: right;
+  font-size: 12px;
+}
+/* FORMULARIOS */
+#modal_crear_rol .etiquetas,
+#modal_crear_rol .inputs {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin: 20px;
+}
+#modal_crear_rol .inputs input {
+  width: 150px;
+  height: 20px;
+}
+/* FORMULARIO 1 */
+#modal_crear_rol .formulario1 {
+  width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+/* FORMULARIO 2 */
+#modal_crear_rol .formulario2 {
+  width: 400px;
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 15px;
+  flex-direction: column;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+#modal_crear_rol .formulario2 div {
+  margin-top: 10px;
+  margin-left: 120px;
+}
+/* BOTONES */
+#modal_crear_rol .botones {
+  margin-top: 20px;
+  display: flex;
+}
+#modal_crear_rol .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  margin-left: 30px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_crear_rol .boton:active {
+  transform: scale(0.9);
+}
+
+/* Estilos del formulario modificar permisos */
+
+#modal_modificar_permisos .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal_modificar_permisos .form {
+  color: #000000;
+  width: 400px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_modificar_permisos h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#modal_modificar_permisos h3 {
+  color: #ffffff;
+}
+/* DERECHA */
+#modal_modificar_permisos .derecha {
+  text-align: right;
+  font-size: 12px;
+}
+/* FORMULARIOS */
+#modal_modificar_permisos .etiquetas,
+#modal_modificar_permisos .inputs {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 20px;
+}
+#modal_modificar_permisos .inputs input {
+  width: 150px;
+  height: 20px;
+}
+/* FORMULARIO 1 */
+#modal_modificar_permisos .formulario1 {
+  width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+/* FORMULARIO 2 */
+#modal_modificar_permisos .formulario2 {
+  width: 400px;
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 15px;
+  flex-direction: column;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+#modal_modificar_permisos .formulario2 div {
+  margin-top: 10px;
+  margin-left: 120px;
+}
+/* BOTONES */
+#modal_modificar_permisos .modificar_permisos_botones {
+  margin-top: 20px;
+  display: flex;
+}
+#modal_modificar_permisos .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  margin-left: 30px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_modificar_permisos .boton:active {
+  transform: scale(0.9);
+}
+
+/* Estilos del formulario crear usuario */
+
+#modal_crear_usuario .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 800px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal_crear_usuario .form {
+  color: #000000;
+  width: 400px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_crear_usuario h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#modal_crear_usuario h3 {
+  color: #ffffff;
+}
+/* DERECHA */
+#modal_crear_usuario .derecha {
+  text-align: right;
+  font-size: 12px;
+}
+/* FORMULARIOS */
+#modal_crear_usuario .etiquetas,
+#modal_crear_usuario .inputs {
+  margin: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+#modal_crear_usuario .etiquetas {
+  width: 180px;
+}
+#modal_crear_usuario label {
+  border: 1px solid #b3b3b3;
+}
+#modal_crear_usuario select,
+#modal_crear_usuario input,
+#modal_crear_usuario label {
+  margin-bottom: 15px;
+}
+/* FORMULARIO 1 */
+#modal_crear_usuario .formulario1 {
+  width: 400px;
+  display: flex;
+  margin-bottom: 20px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+/* FORMULARIO 2 */
+#modal_crear_usuario .formulario2 {
+  width: 400px;
+  display: flex;
+  margin-bottom: 20px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+/* BOTONES */
+#modal_crear_usuario .botones {
+  display: flex;
+}
+#modal_crear_usuario .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  margin-left: 30px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_crear_usuario .boton:active {
+  transform: scale(0.9);
+}
+
+/* Estilos del formulario actualizar datos*/
+
+#modal_actualizar_datos .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 560px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal_actualizar_datos .form {
+  color: #000000;
+  width: 400px;
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_actualizar_datos h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#modal_actualizar_datos h3 {
+  color: #ffffff;
+}
+/* DERECHA */
+#modal_actualizar_datos .derecha {
+  text-align: right;
+  font-size: 12px;
+}
+/* FORMULARIOS */
+#modal_actualizar_datos .etiquetas,
+#modal_actualizar_datos .inputs {
+  margin: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+#modal_actualizar_datos .etiquetas {
+  width: 180px;
+}
+#modal_actualizar_datos label {
+  border: 1px solid #b3b3b3;
+}
+#modal_actualizar_datos select,
+#modal_actualizar_datos input,
+#modal_actualizar_datos label {
+  margin-bottom: 15px;
+}
+/* FORMULARIO 1 */
+#modal_actualizar_datos .formulario1 {
+  width: 400px;
+  display: flex;
+  margin-bottom: 20px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+/* BOTONES */
+#modal_actualizar_datos .actualizar_datos_botones {
+  display: flex;
+}
+#modal_actualizar_datos .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  margin-left: 30px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_actualizar_datos .boton:active {
+  transform: scale(0.9);
+}
+
+/* Estilos del formulario cambiar contraseña */
+
+#modal_cambiar_contraseña .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px;
+}
+
+/* contenedor formulario */
+#modal_cambiar_contraseña .form {
+  color: #000000;
+  width: 400px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* titulo */
+
+#modal_cambiar_contraseña h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* ID */
+#modal_cambiar_contraseña .derecha {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* formulario */
+#modal_cambiar_contraseña .nombres_de_usuario {
+  width: 400px;
+  display: flex;
+  margin-bottom: 20px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+
+#modal_cambiar_contraseña .etiquetas,
+#modal_cambiar_contraseña .inputs {
+  margin: 20px;
+  font-size: 14px;
+}
+
+/* BOTONES */
+#modal_cambiar_contraseña .cambiar_contraseña_botones {
+  display: flex;
+}
+
+#modal_cambiar_contraseña .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  margin-left: 33px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_cambiar_contraseña .boton:active {
+  transform: scale(0.9);
+}
+
+/* estilos formulario deshabilitar usuario */
+
+#modal_deshabilitar_usuarios .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 450px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal_deshabilitar_usuarios .form {
+  color: #000000;
+  width: 400px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_deshabilitar_usuarios h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* FORMULARIO 1 */
+#modal_deshabilitar_usuarios .formulario1 {
+  width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+  text-align: center;
+}
+#modal_deshabilitar_usuarios #pregunta {
+  margin-top: 20px;
+  font-weight: bold;
+}
+#modal_deshabilitar_usuarios .p {
+  font-weight: bold;
+  margin-top: 20px;
+}
+#modal_deshabilitar_usuarios .inputs {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+#modal_deshabilitar_usuarios #eliminar {
+  margin-left: 50px;
+}
+/* BOTONES */
+#modal_deshabilitar_usuarios .deshabilitar_usuario_botones {
+  display: flex;
+}
+#modal_deshabilitar_usuarios .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  margin-left: 30px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_deshabilitar_usuarios .boton:active {
+  transform: scale(0.9);
+}
+
+/* Modal de formulario generar informes */
+
+#modal_generar_informe .contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 560px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+#modal_generar_informe .form {
+  width: 400px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_generar_informe h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#modal_generar_informe h3 {
+  color: #ffffff;
+}
+/* FORMULARIO 1 */
+#modal_generar_informe .formulario1 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+  margin-bottom: 20px;
+}
+#modal_generar_informe .contenido {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#modal_generar_informe .etiquetas {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+#modal_generar_informe .inputs {
+  width: 170px;
+  flex-direction: column;
+}
+#modal_generar_informe label {
+  margin-bottom: 10px;
+}
+#modal_generar_informe #directorio {
+  margin-top: 10px;
+}
+#modal_generar_informe .checkbox {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#modal_generar_informe #pdf,
+#modal_generar_informe #excel {
+  margin-left: 20px;
+}
+/* FORMULARIO 2 */
+#modal_generar_informe .formulario2 {
+  border: 1px solid black;
+  width: 400px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+}
+#modal_generar_informe .formulario2 .contenido {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#modal_generar_informe .formulario2 #seccionUno {
+  display: flex;
+}
+#modal_generar_informe .formulario2 .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 85px;
+}
+#modal_generar_informe .formulario2 .etiquetas {
+  padding-left: 10px;
+  display: flex;
+  width: 300px;
+}
+#modal_generar_informe .formulario2 #seccionDos {
+  text-align: center;
+}
+#modal_generar_informe .formulario2 #rol {
+  height: 25px;
+}
+#modal_generar_informe .formulario2 input {
+  margin-bottom: 14px;
+}
+/* BOTONES */
+#modal_generar_informe .generar_informe_botones {
+  display: flex;
+}
+#modal_generar_informe .boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 30px;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+#modal_generar_informe .boton:active {
+  transform: scale(0.9);
+}

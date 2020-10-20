@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <title>Eliminar factura</title>
+    <link rel="stylesheet" href="css/form eliminar factura-despacho.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="" class="form" onsubmit="return validacion_eliminar_factura()">
+        <h2>Eliminar Factura</h2>
+        <div class="formulario1">
+          <p id="pregunta">Desea eliminar la factura seleccionada?</p>
+          <p class="p">Numero de la factura:</p>
+          <p>202045</p>
+          <p class="p">Proveedor</p>
+          <p>Ferreteria el aguila</p>
+          <div class="inputs">
+            <div>
+              <input type="checkbox" name="" id="eliminar">
+              <label for="eliminar"> Eliminar </label>
+            </div>
+          </div>
+        </div>
+        <div class="botones">
+          <input type="submit" value="Eliminar" class="boton" />
+          <a href="gestion inventario pedido externo.html"><input type="button" value="Cancelar" class="boton"></a>
+        </div>
+      </form>
+    </div>
+    <script src="js/form eliminar factura.js"></script>
+  </body>
+</html>

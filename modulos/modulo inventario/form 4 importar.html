@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Importar articulos</title>
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <link rel="stylesheet" href="css/g form 4 importar.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <form class="form" onsubmit="return validacion_importar()">
+        <h2>Importar Articulos</h2>
+        <!-- FORMULARIO 1 -->
+        <h3>Descargar formato</h3>
+        <div class="formulario1">
+          <p>Descargue la plantilla de excel para la importarcion de articulos a la base de datos</p>
+          <div id="descargarPlantilla">
+            <input type="button" value="Descargar Plantilla" class="boton">
+          </div>
+        </div>
+        <!-- FORMULARIO 2 -->
+        <h3>Importar articulos</h3>
+        <div class="formulario2">
+          <p>Seleccione la plantilla de excel con los articulos previamente agregados para cargarlos a la base de datos de Sicon</p>
+          <div id="examinar">
+            <input type="file" value="" id="dir">
+          </div>
+        </div>
+        <!-- BOTONES -->
+        <div class="botones">
+          <input type="submit" value="Importar" class="boton" />
+          <a href="inventario.html"><input type="button" value="Cancelar" class="boton"/></a>
+        </div>
+      </form>
+    </div>
+    <script src="js/form 4 importar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nueva unidad metrica</title>
+    <link rel="icon" type="image" href="img/general/favicon.png" />
+    <link rel="stylesheet" href="css/d form 2-1-1 nueva subcategoria y 3-1-1 nueva metrica.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="" class="form" onsubmit="return validacion_nueva_metrica()">
+        <h2>Nueva Unidad Metrica</h2>
+        <!-- CATEGORIAS -->
+        <h3>Unidades metricas</h3>
+        <div class="formulario1">
+          <p>Seleccione una unidad metrica *</p>
+          <div>
+            <input type="radio" name="unidadmetrica" id="unidad" value="Unidad">
+            <label for="unidad">Unidad</label>
+          </div>
+          <div>
+            <input type="radio" name="unidadmetrica" id="longitud" value="Longitud">
+            <label for="longitud">Longitud</label>
+          </div>
+          <div>
+            <input type="radio" name="unidadmetrica" id="area" value="Area">
+            <label for="area">Area</label>
+          </div>
+          <div>
+            <input type="radio" name="unidadmetrica" id="peso" value="Peso">
+            <label for="peso">Peso</label>
+          </div>
+          <div>
+            <input type="radio" name="unidadmetrica" id="volumen" value=""Volumen>
+            <label for="volumen">Volumen</label>
+          </div>
+        </div>
+        <!-- NOMBRE -->
+        <h3>Datos de la unidad metrica</h3>
+        <div class="formulario2">
+          <div>
+            <label for="nombre">Nombre unidad metrica *</label>
+            <input type="text" name="nombre" id="nombre" />
+          </div>
+        </div>
+        <!-- BOTONES -->
+        <div class="botones">
+          <input type="submit" value="Crear" class="boton" />
+          <a href="form 3-1 metricas.html"><input type="button" value="Cancelar" class="boton"></a>
+        </div>
+      </form>
+    </div>
+    <script src="js/form 3-1-1 nueva metrica.js"></script>
+  </body>
+</html>

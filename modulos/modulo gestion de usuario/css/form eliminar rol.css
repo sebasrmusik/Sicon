@@ -1,0 +1,67 @@
+*{
+  margin: 0px;   
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#modal_eliminar_rol .contenedor{
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 500px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal_eliminar_rol .form {
+  width: 400px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+#modal_eliminar_rol h2{
+  background: #0B2161;
+  color: white;
+  padding: 5px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* FORMULARIO 1 */
+#modal_eliminar_rol .formulario1 {
+  width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #B3B3B3;
+  border-bottom: 10px solid #0B2161;
+  text-align: center;
+}
+#modal_eliminar_rol #pregunta{
+  margin-top: 20px;
+  font-weight: bold;
+}
+#modal_eliminar_rol .p{
+  font-weight: bold;
+  margin-top: 20px;
+}
+#modal_eliminar_rol .inputs {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+#modal_eliminar_rol .botones{
+  display: flex;
+  justify-content: space-evenly;
+}
+#modal_eliminar_rol .boton{
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0B2161;
+  width: 150px;
+  border-bottom: 5px solid #B3B3B3;
+}

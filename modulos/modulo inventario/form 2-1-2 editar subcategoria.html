@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar subcategoria</title>
+    <link rel="icon" type="image" href="img/general/favicon.png" />
+    <link rel="stylesheet" href="css/e form 2-1-2 editar subcategoria y 3-1-2 editar metrica.css"/>
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="" class="form" onsubmit="return validacion_editar_subcategoria()">
+        <h2>Modificar Subategoria</h2>
+        <!-- FORMULARIO -->
+        <h3>Modificar dato</h3>
+        <div class="formulario">
+          <div>
+            <label for="categoria">Categoria</label>
+            <input type="text" name="" id="categoria" value="Petreos" disabled>
+          </div>
+          <div>
+            <label for="subcategoria">Subcategoria a modificar</label>
+            <input type="text" name="" id="subcategoria" value="Gravacal" disabled>
+          </div>
+          <div>
+            <label for="nuevaCategoria">Cambio de nombre</label>
+            <input type="text" name="" id="nuevaCategoria" value="">
+          </div>
+        </div>
+        <!-- BOTONES -->
+        <div class="botones">
+          <input type="submit" value="Cambiar" class="boton" />
+          <a href="form 2-1 subcategorias.html"><input type="button" value="Cancelar" class="boton"></a>
+        </div>
+      </form>
+    </div>
+    <script src="js/form 2-1-2 editar subcategoria.js"></script>
+  </body>
+</html>

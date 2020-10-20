@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto</title>
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <link rel="stylesheet" href="css/a form 1-1 nuevo articulo y 1-2 editar articulo.css">
+</head>
+<body>
+    <div class="contenedor">
+      <form action="" class="form" onsubmit="return validacion_crear_articulo()">
+        <h2>Editar Articulo</h2>  
+        <div class="formulario1">
+
+          <div id="seccionUno">
+            <div class="elementosInternos" >
+            <label for="CodigoInterno">Codigo Interno *</label>
+            <input type="text" name="CodigoInterno" id="CodigoInterno" class="tamanioDos" >
+            </div>
+            <div class="elementosInternos" >
+              <label for="Nombre">Nombre *</label>
+              <input type="text" name="Nombre" id="Nombre" class="tamanioUno">
+            </div>
+            <div class="elementosInternos">
+              <label for="Descripcion" >Descripcion</label>
+              <textarea name="Descripcion" rows="2" cols="30" class="tamanioUno" id="Descripcion"> </textarea>
+            </div>
+            <div class="elementosInternos" >
+              <label for="UnidadMedida">Unidad de medida *</label>
+              <input type="text" name="UnidadMedida" id="UnidadMedida" class="tamanioDos">
+            </div>
+            <div class="elementosInternos" >
+              <label for="TiempoVencimiento">Tiempo de Vencimiento</label>
+              <input type="text" name="TiempoVencimiento" id="TiempoVencimiento" class="tamanioTres">
+            </div>
+          </div>
+
+          <div id="seccionDos">
+            <div class="elementosInternos" >
+              <label for="StockMinimo">Stock minimo</label>
+              <input type="number" name="StockMinimo" id="StockMinimo" class="tamanioTres">
+            </div>
+            <div class="elementosInternos" >
+              <label for="StockMaximo">Stock Maximo</label>
+              <input type="number" name="StockMaximo" id="StockMaximo" class="tamanioTres">
+            </div>
+            <div class="elementosInternos" >
+              <label for="Categoria">Categoria *</label>
+              <select name="Categoria" id="Categoria" class="tamanioUno">
+                <option value="">Elige la categoria</option>
+                <option value="Categoria 1">Categoria 1</option>
+                <option value="Categoria 1">Categoria 2</option>
+                <option value="Categoria 1">Categoria 3</option>
+              </select>
+            </div>
+            <div class="elementosInternos" >
+              <label for="subcategoria">Subcategoria *</label>
+              <select name="subcategoria" id="subcategoria" class="tamanioUno">
+                <option value="">Elige la subcategoria</option>
+                <option value="Subcategia 1">Subcategia 1</option>
+                <option value="Subcategia 2">Subcategia 2</option>
+                <option value="Subcategia 3">Subcategia 3</option>
+              </select>
+            </div>
+            <div class="elementosInternos" >
+              <label for="NotaProducto">Nota del producto</label>
+              <textarea name="NotaProducto" rows="2" cols="30" class="tamanioUno" id="NotaProducto"></textarea>
+            </div>
+          </div>
+
+        </div>
+        <div class="botones">
+          <input type="submit" value="Editar Articulo" class="boton">
+          <a href="inventario.html"><input type="button" value="Cancelar" class="boton"></a>
+        </div>
+      </form>
+    </div> 
+    <script src="js/form 1-2 editar articulo.js"></script>
+  </body>
+</html>

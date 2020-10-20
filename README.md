@@ -1,2 +1,0 @@
-# Sicon
-Sistema Sicon

@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url(../img/general/Fondo1.png);
+}
+.contenedor {
+  background-image: url(../img/general/Fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #000000;
+  font-size: 14px;
+
+  width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 900px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* FORMULARIO 1 */
+.formulario1 {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* BOTONES */
+#botonesInternos {
+  display: block;
+  text-align: right;
+}
+#botonesInternos a img {
+  margin-left: 10px;
+  height: 50px;
+  width: 150px;
+}
+#lineaBotones {
+  width: 509px;
+  height: 10px;
+  border: none;
+  background: #666666;
+  margin-bottom: 20px;
+}
+/* TABLAS */
+#tablas{
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+#tablaUno,
+#tablaDos,
+#tablaTres,
+#tablaCuatro,
+#tablaCinco{
+  overflow-y: scroll;
+  width: 170px;
+  height: 390px;
+  }
+table {
+  /* table-layout: fixed; */
+  text-align: center;
+  width: 150px;
+  border-collapse: collapse;
+}
+.tamanioUno {
+  width: 15px;
+}
+.tamanioDos {
+  width: 135px;
+}
+th {
+  background: #cccccc;
+  color: #202020;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+td {
+  padding: 6px;
+}
+/* AZUL */
+th {
+  position: sticky;
+  top: 0;
+}
+.cebra {
+  background: #fff;
+  color: #202020;
+}
+.cebra:nth-child(even) {
+  background: #073763;
+  color: #ffffff;
+}
+/* BOTONES */
+.botones {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  border-bottom: 5px solid #b3b3b3;
+}

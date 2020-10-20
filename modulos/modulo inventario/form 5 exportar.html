@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <title>Rerpote productos</title>
+    <link rel="stylesheet" href="css/h form 5 exportar.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="" class="form" onsubmit="return validacion_exportar()">
+        <h2>Exportar</h2>
+        <h3>Reporte de todos los productos</h3>
+        <div class="formulario1">
+          <div class="contenido">
+            <div id="nombreDoc">
+              <label for="nombre">Nombre del doc</label>
+              <input type="text" name="" id="nombre">
+            </div>
+            <div id="directory">
+              <label for="directorio">Directorio</label>
+              <div>
+                <input type="text" name="" id="directorio">
+                <input type="button" value="/..." id="dir">
+              </div>
+            </div>
+          </div>
+          <!-- CHECKBOXES -->
+          <div class="checkbox">
+            <div>
+              <p>Tipo de documento </p>
+            </div>
+            <div>
+              <input type="radio" name="exportarArticulos" id="excel">
+              <label for="excel"> Excel </label>
+            </div>
+            <div>
+              <input type="radio" name="exportarArticulos" id="pdf">
+              <label for="pdf"> PDF </label>
+            </div>
+          </div>
+        </div>
+        <div class="botones">
+          <input type="submit" value="Exportar" class="boton"/>
+          <a href="inventario.html"><input type="button" value="Cancelar" class="boton"></a>
+        </div>
+      </form>
+    </div>
+    <script src="js/form 5 exportar.js"></script>
+  </body>
+</html>

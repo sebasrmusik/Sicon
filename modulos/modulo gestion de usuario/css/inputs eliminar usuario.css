@@ -1,0 +1,5 @@
+#modal_deshabilitar_usuarios .eliminar , #modal_eliminar_rol .eliminar{
+  text-align: center;
+  border: none;
+  background: none;
+}

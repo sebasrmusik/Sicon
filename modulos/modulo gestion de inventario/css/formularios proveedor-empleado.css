@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url(../img/general/fondo1.png);
+}
+.contenedor {
+  background-image: url(../img/general/fondo1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 900px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+/* TITULO */
+h2 {
+  background: #0b2161;
+  color: white;
+  padding: 5px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h3{
+  font-size: 18px;
+  color: #fff;
+}
+/* FORMULARIO 1 */
+.formulario1 {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  background: #b3b3b3;
+  border-bottom: 10px solid #0b2161;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.elementosInternos{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.tamanioUno{
+  text-align: right;
+  width: 200px;
+}
+.tamanioDos{
+  text-align: right;
+  width: 120px;
+}
+/* BOTONES */
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+}
+.boton {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  background: #0b2161;
+  width: 150px;
+  border-bottom: 5px solid #b3b3b3;
+}

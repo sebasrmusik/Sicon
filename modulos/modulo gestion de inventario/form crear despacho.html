@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Despacho</title>
+    <link rel="icon" type="image" href="img/general/favicon.png">
+    <link rel="stylesheet" href="css/form crear factura-despacho.css">
+  </head>
+  <body>
+    <form action="" onsubmit="return validacion_crear_despachos()">
+      <div class="contenedor">
+        <div class="form">
+          <h2>Crear despacho</h2>
+          <div id="h3DerechaCreaFactura">
+            <div id="h3Subtitulo">
+              <h3 id="titu">Datos del despacho</h3>
+            </div>
+            <div id="derecha">
+              <label for="idConsecutivo">ID:</label>
+              <input type="text" name="idConsecutivo" id="idConsecutivo" placeholder="004" readonly>
+            </div>
+          </div>
+          <!-- FORMULARIO -->
+          <div id="formulario">
+            <fieldset id="fieldset1">
+              <legend>Datos del empleado</legend>
+              <div class="seccion">
+                <div>
+                  <label for="fechaCrearFactura">Fecha</label>
+                  <input type="date" name="fechaCrearFactura" id="fechaCrearFactura" class="tamanioDos">
+                </div>
+                <div>
+                  <label for="proveedorCrearFactura">Empleado</label>
+                  <select name="proveedorCrearFactura" id="proveedorCrearFactura" class="tamanioUno">
+                    <option value="">Seleccione un empleado</option>
+                    <option value="">Empleado 1</option>
+                    <option value="">Empleado 2</option>
+                    <option value="">Empleado 3</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset id="fieldset2">
+              <legend>Datos del producto</legend>
+              <div class="seccion">
+                <div>
+                  <label for="fromArticulo">Articulo</label>
+                  <select name="fromArticulo" id="fromArticulo" class="tamanioUno">
+                    <option value="Seleccione">Seleccione</option>
+                    <option value="Cemento">Cemento</option>
+                    <option value="Ladrillo">Ladrillo</option>
+                    <option value="Varilla">Varilla</option>
+                    <option value="Alambre">Alambre</option>
+                    <option value="Baldosa">Baldosa</option>
+                    <option value="Pegante">Pegante</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="fromMetrica">Unidad metrica</label>
+                  <select name="fromMetrica" id="fromMetrica" class="tamanioUno">
+                    <option value="Seleccione Unida metrica">Seleccione Unida metrica</option>
+                    <option value="Bulto">Bulto</option>
+                    <option value="Unidad">Unidad</option>
+                    <option value="3/4">3/4</option>
+                    <option value="Chuspa">Chuspa</option>
+                    <option value="Metro cuadrado">Metro cuadrado</option>
+                    <option value="Bulto">Bulto</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="fromCantidad">Cantidad</label>
+                  <input type="number" name="fromCantidad" id="fromCantidad" value="" class="tamanioDos">
+                </div>
+                <!-- BOTON AGREGAR PRODUCTO -->
+                <div>
+                  <label for=""></label>
+                  <input type="button" value="Agregar producto" class="boton" onclick="agregarProducto()"></div>
+              </div>
+            </fieldset>
+          </div >
+          <!-- GRILLA -->
+          <h3 class="subtitulos">Factura, remision u orden de compra</h3>
+          <div class="grilla">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Articulo Producto</th>
+                  <th>Unidad metrica</th>
+                  <th>Cantidad</th>
+                  <th>-</th>
+                </tr>
+              </thead>
+              <tbody id="tablaProducto">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr>
+          <!-- BOTONES -->
+          <div id="botonesCrearFactura">
+            <input type="submit" value="Crear factura" class="boton"/>
+            <a href="gestion inventario pedido interno.html"><input type="button" value="Cancelar" class="boton"></a>
+          </div>
+        </div>
+      </div>
+      <script src="js/agregar despacho.js" charset="UTF-8"></script>
+    </form>
+    <script src="js/form crear despacho.js"></script>
+  </body>
+</html>
