@@ -9,12 +9,12 @@
   </head>
   <body>
     <div class="contenedor">
-      <form action="" class="form" onsubmit="return validacion_eliminar_subcategoria()">
+      <form action="php/eliminarSubCat.php" class="form" onsubmit="return validacion_eliminar_subcategoria()" method="post">
         <h2>Eliminar Subcategoria</h2>
         <div class="formulario1">
           <p id="pregunta">Desea eliminar la subcategoria seleccionada?</p>
           <p class="p">Categoria</p>
-          <p>Sinteticos</p>
+          <p><input type="text" style="text-align: center; border: none; background: none;"></p>
           <p class="p">Subcategoria</p>
           <p>Metracrilato</p>
           <div class="inputs">
@@ -26,7 +26,7 @@
         </div>
         <div class="botones">
           <input type="submit" value="Eliminar" class="boton" />
-          <a href="form 2-1 subcategorias.html"><input type="button" value="Cancelar" class="boton"></a>
+          <a href="form 2-1 subcategorias.php"><input type="button" value="Cancelar" class="boton"></a>
         </div>
       </form>
     </div>

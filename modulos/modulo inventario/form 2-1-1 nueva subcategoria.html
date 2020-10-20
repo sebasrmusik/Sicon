@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="contenedor">
-      <form action="" class="form" onsubmit="return validacion_nueva_subcategoria()">
+      <form action="php/nuevaSubcategoria.php" class="form" onsubmit="return validacion_nueva_subcategoria()" method="post">
         <h2>Nueva Subcategoria</h2>
         <!-- CATEGORIAS -->
         <h3>Categorias</h3>
@@ -32,7 +32,7 @@
             <label for="Organicos">Organicos</label>
           </div>
           <div>
-            <input type="radio" name="Categorias" id="sinteticos" value=""Sinteticos>
+            <input type="radio" name="Categorias" id="sinteticos" value="Sintetico">
             <label for="sinteticos">Sinteticos</label>
           </div>
         </div>
@@ -41,13 +41,13 @@
         <div class="formulario2">
           <div>
             <label for="nombre">Nombre de la subcategoria *</label>
-            <input type="text" name="nombre" id="nombre" />
+            <input type="text" name="nombreSubcategoria" id="nombreSubcategoria" />
           </div>
         </div>
         <!-- BOTONES -->
         <div class="botones">
-          <input type="submit" value="Crear" class="boton" />
-          <a href="form 2-1 subcategorias.html"><input type="button" value="Cancelar" class="boton"></a>
+          <input type="submit" value="Crear" class="boton" name="crearSubcategoria"/>
+          <a href="form 2-1 subcategorias.php"><input type="button" value="Cancelar" class="boton"></a>
         </div>
       </form>
     </div>

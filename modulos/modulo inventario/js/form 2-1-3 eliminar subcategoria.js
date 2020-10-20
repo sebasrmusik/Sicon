@@ -11,4 +11,8 @@ function validacion_eliminar_subcategoria() {
     alert("Subcategoria eliminada satisfactoriamente");
     location.replace("#");
   }
+
+// Eliminacion de rol
+  
+
 }

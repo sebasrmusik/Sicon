@@ -65,9 +65,9 @@ function agregarProducto() {
     datos.innerHTML +
     `<tr class="azul">
   <td><input type="hidden" name="incremental[]" value="${incremental}">${cont++}</td>
-  <td>${articulo.value}</td>
-  <td>${metrica.value}</td>
-  <td>${cantidad.value}</td>
+  <td><input type="hidden" name="" values="${articulo.value}">${articulo.value}</td>
+  <td><input type="hidden" name="" values="${metrica.calue}">${metrica.value}</td>
+  <td<input type="hidden" name="" values="${cantidad.value}">${cantidad.value}</td>
   <td><a href="#" onclick="eliminarArticulo(this)"><img src="img/general/trash.png" alt="Boton eliminar" id="eliminar"></a></td>
   </tr>`;
 
