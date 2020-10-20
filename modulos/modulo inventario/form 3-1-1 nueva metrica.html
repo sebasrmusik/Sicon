@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="contenedor">
-      <form action="" class="form" onsubmit="return validacion_nueva_metrica()">
+      <form action="php/nuevaUnidad.php" class="form" onsubmit="return validacion_nueva_metrica()" method="post">
         <h2>Nueva Unidad Metrica</h2>
         <!-- CATEGORIAS -->
         <h3>Unidades metricas</h3>
@@ -32,7 +32,7 @@
             <label for="peso">Peso</label>
           </div>
           <div>
-            <input type="radio" name="unidadmetrica" id="volumen" value=""Volumen>
+            <input type="radio" name="unidadmetrica" id="olumen" value="Volumen">
             <label for="volumen">Volumen</label>
           </div>
         </div>
@@ -41,13 +41,13 @@
         <div class="formulario2">
           <div>
             <label for="nombre">Nombre unidad metrica *</label>
-            <input type="text" name="nombre" id="nombre" />
+            <input type="text" name="nombreUnidad" id="nombreUnidad" />
           </div>
         </div>
         <!-- BOTONES -->
         <div class="botones">
-          <input type="submit" value="Crear" class="boton" />
-          <a href="form 3-1 metricas.html"><input type="button" value="Cancelar" class="boton"></a>
+          <input type="submit" value="Crear" class="boton" name="crearUnidad"/>
+          <a href="form 3-1 metricas.php"><input type="button" value="Cancelar" class="boton"></a>
         </div>
       </form>
     </div>
