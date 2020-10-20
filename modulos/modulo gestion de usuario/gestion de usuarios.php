@@ -39,7 +39,7 @@
             </div>
             <nav id="nav1">
               <ul>
-                <li><a href="../modulo inventario/inventario.html">Inventario</a></li>
+                <li><a href="../modulo inventario/Inventario.php">Inventario</a></li>
                 <li><a href="../modulo gestion de usuario/gestion de usuarios.php">Gestion de usuario</a></li>
                 <li><a href="../modulo gestion de inventario/gestion inventario proveedor.html">Gestion de Inventario</a></li>
                 

@@ -161,8 +161,8 @@
         </div>
         <!-- BOTONES -->
         <div class="botones">
-          <a href="inventario.html"><input type="button" value="Aceptar" class="boton"></a>
-          <a href="inventario.html"><input type="button" value="Cancelar" class="boton"></a>
+          <a href="Inventario.php"><input type="button" value="Aceptar" class="boton"></a>
+          <a href="Inventario.php"><input type="button" value="Cancelar" class="boton"></a>
         </div>
       </form>
     </div> 

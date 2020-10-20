@@ -85,5 +85,5 @@ function validacion_editar_articulo() {
   }
 
   alert("Los datos ha sido agregados correctamente");
-  location.href("modulos/modulo inventario/inventario.html");
+  location.href("modulos/modulo inventario/Inventario.php");
 }

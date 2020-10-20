@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="es"> 
+  <?php
+    $conexion = mysqli_connect('localhost', 'root', '', 'sicondb');
+  ?>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventario</title>
     <link rel="icon" type="image" href="img/general/favicon.png">
     <link rel="stylesheet" href="css/inventario.css">
+    <link rel="stylesheet" href="css/b form 1-3 eliminar articulo.css">
   </head>
   <body>
     <div class="contenedor">
@@ -33,7 +37,7 @@
             </div>
             <nav id="nav1">
               <ul>
-                <li><a href="../modulo inventario/inventario.html">Inventario</a></li>
+                <li><a href="../modulo inventario/Inventario.php">Inventario</a></li>
                 <li><a href="../modulo gestion de usuario/gestion de usuarios.php">Gestion de usuario</a></li>
                 <li><a href="../modulo gestion de inventario/gestion inventario proveedor.html">Gestion de Inventario</a></li>
                 <!-- <li><a href="#">Informes</a></li> -->
@@ -50,7 +54,7 @@
             <div>
               <a href="form 1-1 nuevo articulo.html"><img class="boton" src="img/inventario/Nuevo articulo.jpg" alt="Nuevo articulo"></a>
               <a href="form 1-2 editar articulo.html"><img class="boton" src="img/inventario/Modificar articulo.jpg" alt="Editar articulo"></a>
-              <a href="form 1-3 eliminar articulo.html"><img class="boton" src="img/inventario/Eliminar articulo.jpg" alt="Eliminar proveedor"></a>
+              <a href="#modal_eliminar_articulo"><img class="boton" src="img/inventario/Eliminar articulo.jpg" alt="Eliminar proveedor"></a>
               <a href="form 2-1 subcategorias.php"><img class="boton" src="img/inventario/Categorias y subcategorias.jpg" alt="Categorias y subcategorias"></a>
               <a href="form 3-1 metricas.php"><img class="boton" src="img/inventario/Unidades metricas.jpg" alt="Unidades metricas"></a>
               <a href="form 4 importar.html"><img class="boton" src="img/inventario/Importar desde excel.jpg" alt="Importar desde excel"></a>
@@ -72,7 +76,6 @@
                   <tr>
                     <th class="tamanioTres"><input type="radio" name="grillaInventario" id="" disabled></th> 
                     <th class="tamanioTres">Id</th>
-                    <th class="tamanioDos">Codigo interno</th>
                     <th class="tamanioUno">Nombre</th>
                     <th class="tamanioDos">Unidad de medida</th>
                     <th class="tamanioTres">Venci miento</td>
@@ -83,6 +86,15 @@
                   </tr>
                 </thead>
                 <tbody>
+
+                  <?php
+                    $consultaArticulos = "SELECT * from tblproductos";
+                    $resultado = mysqli_query($conexion, $consultaArticulos);
+
+                    while ($fila =  mysqli_fetch_array($resultado)) {
+                      
+                    }
+                  ?>
                   <!-- <tr class="cebra">
                     <td class="stickyId"><input type="radio" name="grillaInventario" id=""></td> 
                     <td>001</td>
@@ -221,6 +233,32 @@
           Sicon inc International | Cra 9 No 7 a 16(Fusagasuga) COLOMBIA | servicioalcliente@sicon.com | +57 3115701088
           </p>
         </footer>
+      </div>
+
+      <div class="modal" id="modal_eliminar_articulo">
+        <div class="contenedor">
+          <form action="" class="form" onsubmit="return validacion_eliminar_articulo()">
+            <h2>Eliminar Articulo</h2>
+            <div class="formulario1">
+              <p id="pregunta">Desea eliminar el articulo seleccionado?</p>
+              <p class="p">Nombre del articulo:</p>
+              <p>Cemento Samper</p>
+              <p class="p">Codigo interno</p>
+              <p>141516</p>
+              <div class="inputs">
+                <div>
+                  <input type="checkbox" name="" id="eliminar" checked>
+                  <label for="eliminar"> Eliminar </label>
+                </div>
+              </div>
+            </div>
+            <div class="botones">
+              <input type="submit" value="Eliminar Articulo" class="boton" />
+              <a href="#"><input type="button" value="Cancelar" class="boton"></a>
+            </div>
+          </form>
+        </div>
+        <script src="js/form 1-3 eliminar articulo.js"></script>
       </div>
     </div>
   </body>

@@ -228,3 +228,24 @@ footer p {
  border-top: #666666 10px solid;
  clear: both;
 }
+
+/* Estilos modal */
+
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
